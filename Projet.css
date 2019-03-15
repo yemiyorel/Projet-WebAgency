@@ -214,6 +214,8 @@ body
 	padding-top: 100px;
 	margin-left: 10%;
 	margin-right: 10%;
+	font-weight: 500;
+	color: #6C6867;
 }
 
 	#section2
@@ -221,7 +223,13 @@ body
 		display: flex;
 		flex-flow: column;
 	}
-
+	
+	.titre
+	{
+		color: #2D2B2A;
+		font-size: 2.9em;
+		margin-bottom: 5px;
+	}
 	#services
 	{
 		display: flex;
@@ -274,11 +282,12 @@ body
 	
 	#ordinateur
 	{
-		height: 45vh;
-		width: 35vw;
+		height: 35vh;
+		width: 29vw;
 	}
 	#Lbox
 	{
+		margin-top: 5%;
 		width: 40%;
 		display: flex;
 		flex-flow: column;
@@ -304,8 +313,9 @@ body
 	    background-color: #5CADD3;
 	    width: 13px;
 	    height: 13px;
-	    top: 41%;
-	    right: -104%;
+	    top: 50%;
+	    right: 0;
+	    transform: translate(50%,-50%);
 	}
 
 	.fa-chart-line
@@ -314,7 +324,7 @@ body
 		color: #5CADD3;
 	    border-radius: 50%;
 	    border: rgba(0,0,0,0.1) solid 2px;
-	    padding: 50%;
+	    padding: 20px;
 	}
 
 	.fa-chart-pie
@@ -323,7 +333,7 @@ body
 		color: #5CADD3;
 	    border-radius: 50%;
 	    border: rgba(0,0,0,0.1) solid 2px;
-	    padding: 50%;
+	    padding: 20px;
 	}
 
 	.fa-cubes
@@ -332,7 +342,7 @@ body
 		color: #5CADD3;
 	    border-radius: 50%;
 	    border: rgba(0,0,0,0.1) solid 2px;
-	    padding: 50%;
+	    padding: 20px;
 	}
 
 	.Sbox2
@@ -340,6 +350,17 @@ body
 		margin-left: 10%;
 	}
 
+	.Sbox2 p 
+	{
+		margin-top: 0;
+	}
+	
+	.Sbox2 h2
+	{
+		font-size: 1.3em;
+		color: #2D2B2A;
+		margin-bottom: 5px;
+	}
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 #page3color
@@ -352,6 +373,8 @@ body
 		margin-top: 200px;
 		margin-left: 5%;
 		margin-right: 5%;
+		font-weight: 500;
+		color: #6C6867;
 	}
 
 	#section4
@@ -372,8 +395,8 @@ body
 	#listProjets
 	{
 		margin-top: 50px;
+		margin-bottom: 50px;
 		display: flex;
-		flex-flow: row;
 		justify-content: center;
 		padding-left: 0;
 		color: #828588;
@@ -439,28 +462,15 @@ body
 		height: 200px;
 	}
 
-	#section5 .box
-	{
-		margin: 1%;
-	}
-
 	.box
 	{
 		position: relative;
+		margin: 1%;
 	}
 
-	.fa-eye
+	.fa-eye, h3, h3 + p
 	{
 		display: none;
-	}
-
-	h3
-	{
-		display: none
-	}
-	h3 + p
-	{
-		display: none
 	}
 
 	.box:hover .desc
@@ -522,12 +532,12 @@ body
 	
 	nav
 	{
-		padding-left: 14%;
+		padding-left: 10%;
 	}
 
 	li a
 	{
-		font-size: 3.5vw;
+		font-size: 4vw;
 		padding-right: 10px;
 		padding-left: 10px;
 		padding-top: 35px;
@@ -535,7 +545,7 @@ body
 
 	ul
 	{
-		padding-left: 0%;
+		padding-left: 0;
 	}
 
 	#section1
@@ -638,9 +648,9 @@ body
     margin-right: 5%;
 	}
 	
-	#services
+	.titre
 	{
-		font-size: 6vw;
+		font-size: 8vw;
 	}
 
 	.ligne1
@@ -681,7 +691,75 @@ body
 
     .Sbox2
     {
-		margin-left: 20%;
+		margin-left: 13%;
     }
+	/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+	#page3
+	{
+		margin-top: 100px;
+	}
 
+	#pProjet
+	{
+		margin: 10px 0 0 0;
+	}
+
+	#listProjets
+	{
+		margin-bottom: 30px;
+	}
+
+	#listProjets li
+	{
+		font-size: 1em;
+		padding: 12px 6px 12px 6px;
+	}
+
+	.box
+	{
+		margin-bottom: 20px;
+	}
+
+	.fa-eye, h3, h3 + p
+	{
+		display: block;
+	}
+	
+	.desc
+	{
+		position: absolute;
+		width: 100%;
+		top: 166px;
+		padding: 10px 0 18px 0;
+		transform: translate(0, -50%);
+		background-color: rgba(0,0,0,0.5);
+		color: white;
+	}
+
+	h3 + p
+	{
+		margin: 0;
+		padding-left: 10px;
+	}
+
+	h3
+	{
+		margin: 0;
+		padding-left: 10px;
+	}
+
+	.fa-eye
+	{
+		display: block;
+		font-size: 15px;
+		color: white;
+		position: absolute;
+		z-index: 2;
+		background-color: #4897B1;
+		top: 110px;
+		right: 15px;
+		border-radius: 50%;
+		padding:10px;
+		border: white 2px solid;
+	}
 }
