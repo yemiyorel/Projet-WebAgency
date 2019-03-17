@@ -348,6 +348,7 @@ body
 	.Sbox2
 	{
 		margin-left: 10%;
+		text-align: justify;
 	}
 
 	.Sbox2 p 
@@ -514,7 +515,58 @@ body
 	}
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#page4
+{
+	height: 90vh;
+}
 
+#Formulaire
+{
+	width: 25%;
+	padding: 1%;
+	border: black 3px solid;
+}
+
+#CI
+{
+	margin-top: 0;
+	font-size: 1.7em;
+}
+
+#Formulaire p
+{
+	margin: 1px;
+	color:#5A5756;
+}
+
+#WAS
+{
+	font-weight: 700;
+}
+
+#adress, #tel
+{
+	font-weight: 500;
+}
+
+
+form
+{
+	display: flex;
+	flex-flow: column;
+}
+
+input, textarea
+{
+	font-family: 'Roboto';
+}
+
+#Message
+{
+	height: 6em;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 @media screen and (max-width: 450px) 
 {
 
@@ -557,19 +609,24 @@ body
 	{
 		height: 300px;
 		width: auto;
-		margin-left:  -370px;
+		margin-left: -370px;
 	}
 	
 	#textecentre
 	{
-		top:5%;
-		left: 5%;
+		top: 3%;
+		left: 3%;
 	}
 
 	h1
 	{
 		font-size: 5vw;
    		margin-top: 0;
+	}
+
+	#ral
+	{
+		display: inline;
 	}
 
 	.ral2
@@ -600,7 +657,7 @@ body
 	{
 		height: 8vh;
 	    width: 4vh;
-	    background-color: rgba(0,0,0,0.1);
+	    background-color: rgba(0,0,0,0.3);
 	    border-bottom-right-radius: 8vh;
 	    border-top-right-radius: 8vh;
 	    top: 55%;
@@ -618,7 +675,7 @@ body
 	{ 
 		height: 8vh;
 	    width: 4vh;
-	    background-color: rgba(0,0,0,0.1);
+	    background-color: rgba(0,0,0,0.3);
 	    border-bottom-left-radius: 8vh;
 	    border-top-left-radius: 8vh;
 	    top: 55%;
