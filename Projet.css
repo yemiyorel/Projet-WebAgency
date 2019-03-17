@@ -521,119 +521,117 @@ body
 	position: relative;
 }
 
-#map 
-{
-	overflow:hidden;
-	padding-bottom:50%;
-	position:relative;
-	height:0;
-}
+	#map 
+	{
+		overflow:hidden;
+		padding-bottom:50%;
+		position:relative;
+		height:0;
+	}
 
-#map iframe 
-{
-	left:0;
-	top:0;
-	height:100%;
-	width:100%;
-	position:absolute;
-}
+	#map iframe 
+	{
+		left:0;
+		top:0;
+		height:100%;
+		width:100%;
+		position:absolute;
+	}
 
-#Cover
-{
-	background-color: rgba(93, 171, 233, 0.3);
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	z-index: 2;
-	top:0;
-}
+	#Cover
+	{
+		background-color: rgba(93, 171, 233, 0.3);
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: 2;
+		top:0;
+	}
 
-#Formulaire
-{
-	position: absolute;
-	top: 15%;
-	right: 10%;
-	z-index: 3;
-	width: 20%;
-	padding: 15px;
-	background-color: rgba(255, 255, 255, 0.8);
-}
+	#Formulaire
+	{
+		position: absolute;
+		top: 15%;
+		right: 10%;
+		z-index: 3;
+		width: 20%;
+		padding: 15px;
+		background-color: rgba(255, 255, 255, 0.8);
+	}
 
-#CI
-{
-	margin-top: 0;
-	font-size: 1.7em;
-	color: #2D2B2A;
-}
+	#CI
+	{
+		margin-top: 0;
+		font-size: 1.7em;
+		color: #2D2B2A;
+	}
 
-#Formulaire p
-{
-	margin: 1px;
-	color:#5A5756;
-}
+	#Formulaire p
+	{
+		margin: 1px;
+		color:#5A5756;
+	}
 
-#WAS
-{
-	font-weight: 900;
-}
+	#WAS
+	{
+		font-weight: 900;
+	}
 
-#adress, #tel
-{
-	font-weight: 500;
-}
+	#adress, #tel
+	{
+		font-weight: 500;
+	}
 
-#dot
-{
-	border-bottom: black dotted 1px;
-}
+	#dot
+	{
+		border-bottom: black dotted 1px;
+	}
 
-form
-{
-	display: flex;
-	flex-flow: column;
-}
+	form
+	{
+		display: flex;
+		flex-flow: column;
+	}
 
-input, textarea
-{
-	font-family: 'Roboto';
-	margin-top: 5%;
-	border-radius: 5px;
-	border: solid 2px rgba(212, 212, 212, 0.7);
-	padding: 7px 10px 7px 10px;
-	font-size: 1em;
-	font-weight: 500;
-}
+	input, textarea
+	{
+		font-family: 'Roboto';
+		margin-top: 5%;
+		border-radius: 5px;
+		border: solid 2px rgba(212, 212, 212, 0.7);
+		padding: 7px 10px 7px 10px;
+		font-size: 1em;
+		font-weight: 500;
+	}
 
-#Message
-{
-	height: 10em;
-}
+	#Message
+	{
+		height: 10em;
+	}
 
-::placeholder {
-    color:rgb(169, 173, 181);
-}
+	::placeholder {
+	    color:rgb(169, 173, 181);
+	}
 
-:-ms-input-placeholder 
-{
-  color: rgb(169, 173, 181);
-}
+	:-ms-input-placeholder 
+	{
+	  color: rgb(169, 173, 181);
+	}
 
-::-ms-input-placeholder
-{ 
-  color: rgb(169, 173, 181);
-}
+	::-ms-input-placeholder
+	{ 
+	  color: rgb(169, 173, 181);
+	}
 
-#Submit
-{
-	width: 40%;
-	border-color: #5CADD3;
-	box-shadow: 0px 4px 0px 0px #4493B9; 
-	background-color: #5CADD3;
-	color: white;
-	margin-bottom: 10px;
-}
-
-
+	#Submit
+	{
+		width: 40%;
+		border-color: #5CADD3;
+		box-shadow: 0px 4px 0px 0px #4493B9; 
+		background-color: #5CADD3;
+		color: white;
+		margin-bottom: 10px;
+	}
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 @media screen and (max-width: 450px) 
@@ -827,6 +825,7 @@ input, textarea
 	#page3
 	{
 		margin-top: 100px;
+		padding-bottom: 50px;
 	}
 
 	#pProjet
@@ -897,7 +896,7 @@ input, textarea
 
 	#map 
 	{
-		padding-bottom:1000px;
+		padding-bottom:700px;
 	}
 
 	#Formulaire
@@ -907,8 +906,19 @@ input, textarea
 		transform: translate(50%,0);
 	}
 
+	#CI
+	{
+		margin-bottom: 10px;
+	}
+
+	#Message
+	{
+		height: 5em;
+	}
+
 	#Submit
 	{
 		width: 50%;
 	}
+
 }
