@@ -555,9 +555,9 @@ body
 	
 	#fille
 	{
-		height: 200px;
+		height: 300px;
 		width: auto;
-		margin-left:  -160px;
+		margin-left:  -370px;
 	}
 	
 	#textecentre
@@ -568,40 +568,42 @@ body
 
 	h1
 	{
-		font-size: 4vw;
+		font-size: 5vw;
+   		margin-top: 0;
 	}
 
-	#ral2
+	.ral2
 	{
 		display: table;
 	}
 
 	#vous
 	{
-		font-size: 3vw;
-		margin-top: 25px;
+		font-size: 4vw;
+    	margin-top: 30px;
 	}
 
 	.bloc
 	{
-	    width: 130px;
+	    width: 110px;
    	 	box-shadow: 0px 2px 0px 0px #4493B9;
-    	margin-top: 35px;
+    	margin-top: 90px;
 	}
 
 	#inbloc
 	{
-		font-size: 2.5vw;
+		font-size: 3.5vw;
 
 	}
 
 	.demicercle1
 	{
-		height: 6vh;
-	    width: 3vh;
+		height: 8vh;
+	    width: 4vh;
 	    background-color: rgba(0,0,0,0.1);
-	    border-bottom-right-radius: 6vh;
-	    border-top-right-radius: 6vh;
+	    border-bottom-right-radius: 8vh;
+	    border-top-right-radius: 8vh;
+	    top: 55%;
 	}
 
 	.trait1
@@ -614,11 +616,12 @@ body
 
 	.demicercle2
 	{ 
-		height: 6vh;
-	    width: 3vh;
+		height: 8vh;
+	    width: 4vh;
 	    background-color: rgba(0,0,0,0.1);
-	    border-bottom-left-radius: 6vh;
-	    border-top-left-radius: 6vh;
+	    border-bottom-left-radius: 8vh;
+	    border-top-left-radius: 8vh;
+	    top: 55%;
 	}
 
 	.trait2
@@ -651,6 +654,7 @@ body
 	.titre
 	{
 		font-size: 8vw;
+		margin-top: 30px;
 	}
 
 	.ligne1
