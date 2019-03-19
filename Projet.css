@@ -6,11 +6,7 @@ body
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-#Page1
-{
-	display: flex;
-	flex-flow: column;
-}
+/* Page 1 */
 
 	.Accueil:hover 
 	{
@@ -47,7 +43,7 @@ body
 		width: 100%;
 	}
 
-	.Logo
+	#Logo
 	{
 		padding-top: 1%;
 		padding-bottom: 1%;
@@ -76,7 +72,6 @@ body
 
 	#Section1
 	{
-		overflow: hidden;
 		position: relative;
 		margin-top: 90px;
 		display: flex;
@@ -92,7 +87,6 @@ body
 	{
 		color: white;
 		position: absolute;
-		z-index: 2;
 		top: 30%;
 		left: 15%;
 	}
@@ -114,24 +108,16 @@ body
 		display: table;
 	}
 
-	.Bloc
-	{
-		position: absolute;
-		display: flex;
-		justify-content: center;
-		width: 8vw;
-		border-radius: 3%;
-		box-shadow: 0px 4px 0px 0px #4493B9; 
-		background-color: #5CADD3;
-		margin-top: 1%;
-	}
-
-	#InBloc
+	#BlocInfo
 	{
 		font-weight: 500;
 		font-size: 1.2vw;
-		margin-block-start: 0.5em;
-	    margin-block-end: 0.5em;
+		margin-top: 0.5em;
+		padding: 0.5em;
+		border-radius: 3%;
+		box-shadow: 0px 4px 0px 0px #4493B9; 
+		background-color: #5CADD3;
+		display: inline-block;
 	}
 
 	.Bleu
@@ -149,14 +135,12 @@ body
 
 	#BarreBleu
 	{
-		position: absolute;
-		z-index: 2;
 		height: 100%;
 		width: 10%;	
 		background-color: #5CADD3;
 	}
 
-	.DemiCercle1
+	#DemiCercle1
 	{
 		position: absolute;
 		display: flex;
@@ -172,7 +156,7 @@ body
 	    transform: translate(0%,-50%);
 	}
 
-	.Fleche1
+	#Fleche1
 	{
 		height: 10px;
 		width: 10px;
@@ -181,7 +165,7 @@ body
 		border-left: 2px white solid;
 	}
 
-	.DemiCercle2
+	#DemiCercle2
 	{
 		position: absolute;
 		display: flex;
@@ -198,7 +182,7 @@ body
 	    transform: translate(0%,-50%);
 	}
 
-	.Fleche2
+	#Fleche2
 	{
 		height: 10px;
 		width: 10px;
@@ -217,24 +201,14 @@ body
 	font-weight: 500;
 	color: #6C6867;
 }
-
-	#Section2
-	{
-		display: flex;
-		flex-flow: column;
-	}
 	
 	.Titre
 	{
 		color: #2D2B2A;
 		font-size: 2.9em;
+		font-weight: 900;
 		margin-bottom: 5px;
-	}
-
-	#Services
-	{
-		display: flex;
-		justify-content: center;
+		text-align: center;
 	}
 
 	#Services2
@@ -290,8 +264,6 @@ body
 	{
 		margin-top: 5%;
 		width: 40%;
-		display: flex;
-		flex-flow: column;
 	}
 
 	.Mbox
@@ -357,7 +329,7 @@ body
 		margin-top: 0;
 	}
 	
-	.Sbox2 h2
+	.Sbox2 h3
 	{
 		font-size: 1.3em;
 		color: #2D2B2A;
@@ -369,24 +341,16 @@ body
 #Page3Color
 {
 	background-color: #F5F5F5;
+	padding: 50px 0 100px 0;
+	margin-top: 150px;
 }
 
 	#Page3
 	{
-		margin-top: 200px;
-		padding-bottom: 100px;
 		margin-left: 5%;
 		margin-right: 5%;
 		font-weight: 500;
 		color: #6C6867;
-	}
-
-	#Section4
-	{
-		display: flex;
-		justify-content: center;
-		flex-flow: column;
-		text-align: center;
 	}
 
 	#pProjet
@@ -404,7 +368,6 @@ body
 		justify-content: center;
 		padding-left: 0;
 		color: #828588;
-		font-weight: 500;
 	}
 
 	#AllWorks
@@ -441,8 +404,6 @@ body
 	#Triangle
 	{
 		position: absolute;
-	    width: 0;
-	    height: 0;
 	    border-top: 8px solid #468CAD;
 	    border-left: 8px solid transparent;
 	    border-right: 8px solid transparent;
@@ -472,7 +433,7 @@ body
 		margin: 1%;
 	}
 
-	.fa-eye, h3, h3 + p
+	.fa-eye, h4, h4 + p
 	{
 		display: none;
 	}
@@ -488,14 +449,14 @@ body
 		color: white;
 	}
 
-	.Box:hover h3+p
+	.Box:hover h4+p
 	{
 		display: block;
 		margin: 0;
 		padding-left: 10px;
 	}
 
-	.Box:hover h3
+	.Box:hover h4
 	{
 		display: block;
 		margin: 0;
@@ -526,16 +487,11 @@ body
 
 	#Map 
 	{
-		overflow:hidden;
 		padding-bottom: 50%;
-		position:relative;
-		height: 0;
 	}
 
 	#Map iframe 
 	{
-		left: 0;
-		top: 0;
 		height: 100%;
 		width: 100%;
 		position:absolute;
@@ -564,8 +520,9 @@ body
 
 	#CI
 	{
-		margin-top: 0;
+		margin: 0 0 0.5em 0;
 		font-size: 1.7em;
+		font-weight: 900;
 		color: #2D2B2A;
 	}
 
@@ -628,7 +585,7 @@ body
 
 	#Submit
 	{
-		width: 40%;
+		width: min-content;
 		border-color: #5CADD3;
 		box-shadow: 0px 4px 0px 0px #4493B9; 
 		background-color: #5CADD3;
@@ -646,7 +603,7 @@ body
 		display: block;
 	}
 	
-	.Logo
+	#Logo
 	{
 	    margin-top: 10px;
     	margin-left: 50%;
@@ -674,6 +631,7 @@ body
 	#Section1
 	{
 		margin-top: 150px;
+		overflow: hidden;
 	}
 	
 	#Fille
@@ -711,17 +669,13 @@ body
     	margin-top: 30px;
 	}
 
-	.Bloc
-	{
-	    width: 110px;
-   	 	box-shadow: 0px 2px 0px 0px #4493B9;
-    	margin-top: 90px;
-	}
-
-	#InBloc
+	#BlocInfo
 	{
 		font-size: 3.5vw;
-
+		width: 110px;
+   	 	box-shadow: 0px 2px 0px 0px #4493B9;
+    	margin-top: 90px;
+    	text-align: center;
 	}
 
 	.DemiCercle1
@@ -828,9 +782,10 @@ body
 
 	/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-	#Page3
+	#Page3Color
 	{
-		margin-top: 100px;
+		margin-top: 50px;
+		padding-top: 10px;
 		padding-bottom: 50px;
 	}
 
@@ -855,7 +810,7 @@ body
 		margin-bottom: 20px;
 	}
 
-	.fa-eye, h3, h3 + p
+	.fa-eye, h4, h4 + p
 	{
 		display: block;
 	}
@@ -871,13 +826,13 @@ body
 		color: white;
 	}
 
-	h3 + p
+	h4 + p
 	{
 		margin: 0;
 		padding-left: 10px;
 	}
 
-	h3
+	h4
 	{
 		margin: 0;
 		padding-left: 10px;
@@ -920,11 +875,6 @@ body
 	#Message
 	{
 		height: 5em;
-	}
-
-	#Submit
-	{
-		width: 50%;
 	}
 
 }
